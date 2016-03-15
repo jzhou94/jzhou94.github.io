@@ -29,13 +29,16 @@ body {
 
 .logo {
 	width: 70%;
-	background-color: white;
 	height: 50%;
 	border: 2px solid black;
 	margin: auto;
 	margin-left: 10%;
 	margin-right: 10%;
 	margin-top: 12%;
+}
+
+.card {
+	background-image: url("https://scontent.xx.fbcdn.net/hphotos-xtp1/v/l/t1.0-9/12494905_1048988535172292_6964509463001107290_n.jpg?oh=5d48a1aace6d1ff9c39a18738f5de8f3&oe=575226A8");
 }
 
 tr {
