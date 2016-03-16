@@ -9,27 +9,42 @@
     }
 
     function menuBox(button, page) {
-        document.getElementById('Home').style.backgroundColor = "whitesmoke";
-        document.getElementById('About').style.backgroundColor = "whitesmoke";
-        document.getElementById('Projects').style.backgroundColor = "whitesmoke";
-        document.getElementById('Academics').style.backgroundColor = "whitesmoke";
-        document.getElementById('Contact').style.backgroundColor = "whitesmoke";
-        var color = document.getElementById(button);
-        color.style.backgroundColor = "#E5E4E2";
+        document.getElementById('Home').style.backgroundColor = "white";
+        document.getElementById('About').style.backgroundColor = "white";
+        document.getElementById('Projects').style.backgroundColor = "white";
+        document.getElementById('Academics').style.backgroundColor = "white";
+        document.getElementById('Contact').style.backgroundColor = "white";
+
+        document.getElementById('Home').style.fontSize = "85%";
+        document.getElementById('About').style.fontSize = "85%";
+        document.getElementById('Projects').style.fontSize = "85%";
+        document.getElementById('Academics').style.fontSize = "85%";
+        document.getElementById('Contact').style.fontSize = "85%";
+
+        document.getElementById('Home').style.fontWeight = "normal";
+        document.getElementById('About').style.fontWeight = "normal";;
+        document.getElementById('Projects').style.fontWeight = "normal";
+        document.getElementById('Academics').style.fontWeight = "normal";
+        document.getElementById('Contact').style.fontWeight = "normal";
+
+        document.getElementById('Home').style.boxShadow = "8px 8px 4px rgb(220, 220, 220)";
+        document.getElementById('About').style.boxShadow = "8px 8px 4px rgb(220, 220, 220)";
+        document.getElementById('Projects').style.boxShadow = "8px 8px 4px rgb(220, 220, 220)";
+        document.getElementById('Academics').style.boxShadow = "8px 8px 4px rgb(220, 220, 220)";
+        document.getElementById('Contact').style.boxShadow = "8px 8px 4px rgb(220, 220, 220)";
+
+        var bStyle = document.getElementById(button);
+        bStyle.style.fontSize = "95%";
+        bStyle.style.fontWeight = "bold";
+        bStyle.style.boxShadow = "8px 8px 4px rgb(200, 200, 200)";
+
         document.getElementById('HomePage').style.display = "none";
         document.getElementById('AboutPage').style.display = "none";
         document.getElementById('ProjectsPage').style.display = "none";
         document.getElementById('AcademicsPage').style.display = "none";
         document.getElementById('ContactPage').style.display = "none";
         var display = document.getElementById(page);
-        display.style.display = "inline-block";
-
-        document.body.style.backgroundImage = "";
-        if (display.id == 'HomePage') {
-            document.body.style.backgroundImage = "url('https://scontent-iad3-1.xx.fbcdn.net/hphotos-xft1/v/t1.0-9/12417948_1217077384973594_4415534927972210358_n.jpg?oh=09ac50116fe0532fbdf4e856c59f3715&oe=574E323F')";
-        } else if (display.id == 'ProjectsPage') {
-            document.body.style.backgroundImage = "url('https://scontent.xx.fbcdn.net/hphotos-xtp1/t31.0-8/10648329_1048735358530943_5188772945848430037_o.jpg')";
-        }
+        display.style.display = "block";
     }
 
 
