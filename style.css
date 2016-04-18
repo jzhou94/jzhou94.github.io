@@ -134,33 +134,48 @@ hr#style1:after {
 }
 
 @media only screen and (max-device-width: 480px){
-#extendContent {
-	margin-top: 100px;
-}
-#isMobile {
-	display: block;
-}
-#notMobile {
-	display: none;
-}
+	#fakeTop{
+		width: 70%;
+		height: 150px;
+		margin: auto;
+		position: relative;
+		z-index: 10;
+	}
+	#extendContent {
+		margin-top: 100px;
+	}
+	#isMobile {
+		display: block;
+	}
+	#notMobile {
+		display: none;
+	}
 }
 
 @media only screen and (min-device-width: 480px){
-.AcaTitles {
-	margin-bottom: 70px;
-}
-.AcaButtons {
-	padding-top: 20px;
-}
-.AcaContents {
-	height: 380px;
-}
-#isMobile {
-	display: none;
-}
-#notMobile {
-	display: block;
-}
+	#fakeTop{
+		width: 70%;
+		height: 20%;
+		max-height: 200px;
+		margin: auto;
+		position: relative;
+		z-index: 10;
+	}
+	.AcaTitles {
+		margin-bottom: 70px;
+	}
+	.AcaButtons {
+		padding-top: 20px;
+	}
+	.AcaContents {
+		height: 380px;
+	}
+	#isMobile {
+		display: none;
+	}
+	#notMobile {
+		display: block;
+	}
 }
 
 .classes {
