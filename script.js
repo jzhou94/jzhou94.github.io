@@ -18,6 +18,9 @@
         });
     });
 
+    $(".menu").on("click", function() {
+        $("body").scrollTop(0);
+    });
 
 
     function menuBox(button, page) {
