@@ -136,7 +136,7 @@ hr#style1:after {
 @media only screen and (max-device-width: 480px){
 	#fakeTop{
 		width: 70%;
-		height: 150px;
+		height: 100px;
 		margin: auto;
 		position: relative;
 		z-index: 10;
