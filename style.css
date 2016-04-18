@@ -115,6 +115,24 @@ body {
 	margin: auto;
 }
 
+hr#style1 {
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+
+hr#style1:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: #f8f8f8;
+}
+
 @media only screen and (max-device-width: 480px){
 #extendContent {
 	margin-top: 100px;
@@ -122,6 +140,9 @@ body {
 }
 
 @media only screen and (min-device-width: 480px){
+#style1 {
+	display: none;
+}
 .AcaTitles {
 	margin-bottom: 70px;
 }
