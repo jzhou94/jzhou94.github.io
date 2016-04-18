@@ -126,6 +126,9 @@ body {
 .AcaTitles {
 	margin-bottom: 50px;
 }
+.AcaButtons {
+	padding-top: 20px;
+}
 }
 
 .classes {
@@ -142,7 +145,6 @@ body {
 	text-align: left;
 	font-size: 85%;
 	font-weight: bold;
-	padding-top: 20px;
 }
 
 .A0, .A1, .A2, .A3, .A4, .A5, .A6, .A7 {
