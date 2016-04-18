@@ -108,7 +108,6 @@ body {
 	margin: auto;
 	padding-left: 15px;
 	padding-right: 15px;
-	margin-bottom: 50px;
 }
 
 .AcaContents {
@@ -120,6 +119,12 @@ body {
 @media only screen and (max-device-width: 480px){
 #extendContent {
 	margin-top: 100px;
+}
+}
+
+@media only screen and (min-device-width: 480px){
+.AcaTitles {
+	margin-bottom: 50px;
 }
 }
 
