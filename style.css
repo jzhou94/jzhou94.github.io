@@ -146,9 +146,6 @@ hr#style1:after {
 }
 
 @media only screen and (min-device-width: 480px){
-#isMobile {
-	display: none;
-}
 .AcaTitles {
 	margin-bottom: 70px;
 }
@@ -157,6 +154,9 @@ hr#style1:after {
 }
 .AcaContents {
 	height: 380px;
+}
+#isMobile {
+	display: none;
 }
 #notMobile {
 	display: inline-block;
