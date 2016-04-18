@@ -10,36 +10,31 @@
 
     function menuBox(button, page) {
         document.getElementById('Home').style.backgroundColor = "white";
-        document.getElementById('About').style.backgroundColor = "white";
         document.getElementById('Projects').style.backgroundColor = "white";
         document.getElementById('Academics').style.backgroundColor = "white";
         document.getElementById('Contact').style.backgroundColor = "white";
 
         document.getElementById('Home').style.fontSize = "85%";
-        document.getElementById('About').style.fontSize = "85%";
         document.getElementById('Projects').style.fontSize = "85%";
         document.getElementById('Academics').style.fontSize = "85%";
         document.getElementById('Contact').style.fontSize = "85%";
 
         document.getElementById('Home').style.fontWeight = "normal";
-        document.getElementById('About').style.fontWeight = "normal";;
         document.getElementById('Projects').style.fontWeight = "normal";
         document.getElementById('Academics').style.fontWeight = "normal";
         document.getElementById('Contact').style.fontWeight = "normal";
 
-        document.getElementById('Home').style.boxShadow = "8px 8px 4px rgb(220, 220, 220)";
-        document.getElementById('About').style.boxShadow = "8px 8px 4px rgb(220, 220, 220)";
-        document.getElementById('Projects').style.boxShadow = "8px 8px 4px rgb(220, 220, 220)";
-        document.getElementById('Academics').style.boxShadow = "8px 8px 4px rgb(220, 220, 220)";
-        document.getElementById('Contact').style.boxShadow = "8px 8px 4px rgb(220, 220, 220)";
+        document.getElementById('Home').style.boxShadow = "4px 4px 2px rgb(220, 220, 220)";
+        document.getElementById('Projects').style.boxShadow = "4px 4px 2px rgb(220, 220, 220)";
+        document.getElementById('Academics').style.boxShadow = "4px 4px 2px rgb(220, 220, 220)";
+        document.getElementById('Contact').style.boxShadow = "4px 4px 2px rgb(220, 220, 220)";
 
         var bStyle = document.getElementById(button);
         bStyle.style.fontSize = "95%";
         bStyle.style.fontWeight = "bold";
-        bStyle.style.boxShadow = "8px 8px 4px rgb(200, 200, 200)";
+        bStyle.style.boxShadow = "4px 4px 2px rgb(200, 200, 200)";
 
         document.getElementById('HomePage').style.display = "none";
-        document.getElementById('AboutPage').style.display = "none";
         document.getElementById('ProjectsPage').style.display = "none";
         document.getElementById('AcademicsPage').style.display = "none";
         document.getElementById('ContactPage').style.display = "none";

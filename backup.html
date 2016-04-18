@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html>
+
+ <head>
+ 
+ <title>My Webpage</title>
+
+ <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+ <meta content="utf-8" http-equiv="encoding">
+
+ <meta name="viewport" content="width=device-width, intial-scale=1.0">
+ <link rel="stylesheet" type="text/css" href="style.css">
+ <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+ <script src="script.js"></script>
+ <script src="jquery-1.12.3.min.js"></script>
+ <script src="js/bootstrap.js"></script>
+
+</head>
+
+<body>
+
+<div id="OverallContent" style="width: 70%; min-width: 1100px; height: 100%; margin: auto;">
+
+
+<div id="header" style="width: 100%; height: 24%; margin: auto; max-width: 1500px;">
+
+	<div id="headerContent" style="width: 100%; height: 50%; margin: auto;">
+
+		<div id="logo" style="width: 38%; height: 100%; display: inline-block; position: static; margin: auto;">
+
+		    <button type="button" class="logo" id="logo" name="logo" onclick="menuBox('Home', 'HomePage')">Joe's Website</button> 
+
+		</div>
+
+		<div id="menu" style="width: 58%; height: 100%; display: inline-block; position: static; margin: auto;">
+
+
+		    <button type="button" class="menu" id="Home" name="Home" onclick="menuBox('Home', 'HomePage')">Home</button> 
+
+		    <button type="button" class="menu" id="About" name="About" onclick="menuBox('About', 'AboutPage')">About</button> 
+
+		    <button type="button" class="menu" id="Projects" name="Projects" onclick="menuBox('Projects', 'ProjectsPage')">Projects</button> 
+
+		    <button type="button" class="menu" id="Academics" name="Academics" onclick="menuBox('Academics', 'AcademicsPage')">Academics</button> 
+
+		    <button type="button" class="menu" id="Contact" name="Contact" onclick="menuBox('Contact', 'ContactPage')">Contact</button> 
+
+		</div>
+
+	</div>
+
+</div>
+
+<div style="width: 100%; height: 10%; margin: auto;">
+
+</div>
+
+<div id="HomePage" class="pages" style="width: 90%; height: 75%; margin: auto;">
+
+
+	<div id="HomeContent" class="contents" style="width: 90%; height: 90%; margin: auto;">
+
+	</div>
+
+</div>
+
+
+<div id="AboutPage" class="pages" style="width: 100%; height: 75%; display: inline-block;">
+
+	<div id="AboutContent" class="contents" style="width: 90%; height: 90%; margin: auto;">
+
+		<div id="AboutTop" style="width: 100%; height: 32%; display: inline-block; margin: auto;">
+
+			<div id="AboutCard" class="card" style="width: 370px; height: 205px; margin: auto; border: black solid 2px;">
+				<button style="width: 100%; height: 100%; border: 0px; background-color: transparent; text-align: Center;" onclick="menuBox('Contact', 'ContactPage')"></button>
+			</div>
+
+		</div>
+
+		<div id="AboutBottom" style="width: 100%; height: 65%; display: inline-block; margin: auto;">
+
+			<div id="AboutInfo" class="info">
+
+				<div style="width: 100%; height: 12%; margin: auto;">
+				</div>
+
+				<div style="width: 80%; height: 18%; margin: auto; padding-top: 2%;">
+					I am a Senior undergraduate student at Boston University. Currently, I am pursuing a B.B.A with Finance Concentration in Questrom School of Business, and a Computer Science B.A. in the College of Arts and Sciences.
+				</div>
+
+				<div style="width: 80%; height: 18%; margin: auto; padding-top: 2%;">
+					Currently, I am a lifeguard working at Boston University's Fitness and Recreation Center. In the past I have worked as a web developer for Questrom School of Business' IT office, where I used Wordpress to create websites that were easily modifiable by customers.
+				</div>
+
+				<div style="width: 80%; height: 18%; margin: auto; padding-top: 2%;">
+					Outside of my academic interests, I am a trip leader in the Boston University Outing Club. I often lead day and overnight hiking and camping trips, from eight upwards to fifty people. On these trips, I am solely responsible for organizing the event, budgetting the trip, and communicating with others involved. With the help of co-leaders, we ensure that the trips are safe and enjoyable.
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+
+
+
+<div id="ProjectsPage" class="pages" style="width: 80%; height: 75%; margin: auto;">
+
+	<div id="ProjectsContent" class="contents">
+
+		<div id="Project1" class="projects" style="margin-top: 6%;">
+			<div style="width:100%; height: 32%; font-weight: bold;">Current Project: Traffic Density Based Light Timer (Python)</div>
+			<div style="width:100%; min-height: 23%;">&nbsp; &nbsp; &#8226; Python project that determines timing of traffic lights based on measurements of relative traffic density for different roads.</div>
+			<div style="width:100%; min-height: 23%;">&nbsp; &nbsp; &#8226; Code Not Yet Available to Public</div>
+		</div>
+
+		<div id="Project2" class="projects">
+			<div style="width:100%; height: 32%; font-weight: bold;">Dynamic Programming Word Converter (Python)</div>
+			<div style="width:100%; min-height: 23%;">&nbsp; &nbsp; &#8226; Python project that uses sequence alignment through dynamic programming to determine the fastest method of changing one word to another.</div>
+			<div style="width:100%; min-height: 23%;">&nbsp; &nbsp; &#8226; For the python code, click <a href="https://github.com/jzhou94/SimpleDifferenceDynamicProg/tree/master/MainProgram">here</a>. For the readme file, click <a href="https://github.com/jzhou94/SimpleDifferenceDynamicProg/blob/master/MainProgram/ReadMe">here</a>.</div>
+		</div>
+
+		<div id="Project3" class="projects">
+			<div style="width:100%; height: 32%; font-weight: bold;">Reliable Routing Protocol (C)</div>
+			<div style="width:100%; min-height: 23%;">&nbsp; &nbsp; &#8226; C transport protocol that reliably communicates messages between Application and Network Layers using timeouts, checksums, and ACKs.</div>
+			<div style="width:100%; min-height: 23%;">&nbsp; &nbsp; &#8226; For the C code, click <a href="https://github.com/jzhou94/ReliableRouting/blob/master/pa2.c">here</a>. For the readme file, click <a href="https://github.com/jzhou94/ReliableRouting/blob/master/ReadMe">here</a>.</div>
+		</div>
+
+		<div id="Project4" class="projects">
+			<div style="width:100%; height: 32%; font-weight: bold;">Available Memory Detection (Assembly, Linkerscript)</div>
+			<div style="width:100%; min-height: 23%;">&nbsp; &nbsp; &#8226; Uses BIOS interrupts to detect and print amount of available memory allocated through QEMU on virtual machine</div>
+			<div style="width:100%; min-height: 23%;">&nbsp; &nbsp; &#8226; For the assembly code, click <a href="https://github.com/jzhou94/MemoryDetection/blob/master/memos-1.s">here</a>. For the linkerscript, click <a href="https://github.com/jzhou94/MemoryDetection/blob/master/memos-1.ld">here</a>. For the readme file, click <a href="https://github.com/jzhou94/MemoryDetection/blob/master/README-1">here</a>.</div>
+		</div>
+
+	</div>
+
+</div>
+
+
+
+<div id="AcademicsPage" class="pages" style="width: 85%; height: 75%; margin: auto;">
+
+	<div id="AcademicsContent" class="contents" style="width: 90%; height: 90%; margin: auto; max-width: 1400px;">
+
+		<div id="AcademicsLeft" class="acabackground">
+
+			<div style="width: 100%; height: 10%; text-align: center;">
+			</div>
+
+			<div id="TItleLeft" class="AcaTitles">Bachelor of Science in Business Administration, Finance Concentration
+			</div>
+
+			<div style="width: 100%; height: 5%; text-align: center;">
+			</div>
+
+
+			<div style="width: 80%; height: 75%; margin: auto;">
+
+				<div id="C0" class="classes">
+					<div style="width: 100%; height: 30px;"><button class="AcaButtons" onclick="displayLeft('A0', 0, 'C0')">&#10157; Corporate Finance</button></div>
+					<div class="A0">&#8226; Addressed</div>
+					<div class="A0">&#8226; Using various models for Real Option Pricing</div>
+				</div>
+
+
+				<div id="C1" class="classes">
+					<div style="width: 100%; height: 30px;"><button class="AcaButtons" onclick="displayLeft('A1', 1, 'C1')">&#10157; Investment Analysis</button></div>
+					<div class="A1">&#8226; Discussed Diversification, </div>
+					<div class="A1">&#8226; hehasdf</div>
+				</div>
+
+
+				<div id="C2" class="classes">
+					<div style="width: 100%; height: 30px;"><button class="AcaButtons" onclick="displayLeft('A2', 2, 'C2')">&#10157; Money and Financial Markets</button></div>
+					<div class="A2">&#8226; Investigated Effects of Business Practices, Federal Policies, and Economic Trends on Corporations</div>
+					<div class="A2">&#8226; hehasdf</div>
+				</div>
+
+
+				<div id="C3" class="classes">
+					<div style="width: 100%; height: 30px;"><button class="AcaButtons" onclick="displayLeft('A3', 3, 'C3')">&#10157; Cross-Functional Management</button></div>
+					<div class="A3">&#8226; Applied</div>
+					<div class="A3">&#8226; Devised a Team Business Plan for a Theoretical New Product “The Sustain-A-Bowl”</div>
+				</div>
+
+
+				<div id="C4" class="classes">
+					<div style="width: 100%; height: 30px;"><button class="AcaButtons" onclick="displayLeft('A4', 4, 'C4')">&#10157; Probability and Statistics</button></div>
+					<div class="A4">&#8226; Reviewed </div>
+					<div class="A4">&#8226; hehasdf</div>
+				</div>
+
+				<div style="width: 100%; height: 1%;">&nbsp;</div>
+
+			</div>
+
+		</div>
+
+		<div id="AcademicsCenter" style="width: 5%; height: 100%; display: inline-block; margin: auto;">
+		</div>
+
+		<div id="AcademicsRight" class="acabackground">
+
+			<div style="width: 100%; height: 12%; text-align: center;">
+			</div>
+
+			<div id="TitleRight" class="AcaTitles">Bachelor of Arts in Computer Science
+			</div>
+
+			<div style="width: 100%; height: 3%; text-align: center;">
+			</div>
+
+			<div style="width: 80%; height: 75%; margin: auto;">
+
+				<div id="C5" class="classes">
+					<div style="width: 100%; height: 30px;"><button class="AcaButtons" onclick="displayRight('A5', 5, 'C5')">&#10157; Operating Systems</button></div>
+					<div class="A5">&#8226; asdf</div>
+					<div class="A5">&#8226; Programed Keyboard Drivers, Memory Detection Printers, and Schedulers in C and Assembly</div>
+				</div>
+
+
+				<div id="C6" class="classes">
+					<div style="width: 100%; height: 30px;"><button class="AcaButtons" onclick="displayRight('A6', 6, 'C6')">&#10157; Computer Networks</button></div>
+					<div class="A6">&#8226; Explored Layers of the OSI Model and Each's relation to the Internet</div>
+					<div class="A6">&#8226; Emulated the application, transport and network layers using Python and C</div>
+				</div>
+
+
+				<div id="C7" class="classes">
+					<div style="width: 100%; height: 30px;"><button class="AcaButtons" onclick="displayRight('A7', 7, 'C7')">&#10157; Intro to Algorithms</button></div>
+					<div class="A7">&#8226; Analyzed Mathematic Algorithms Related to Scheduling, Perfect Matching, and Hashing</div>
+					<div class="A7">&#8226; Implemented Python Algorithms such as Sequence Alignment and Max-Flow Min-Cut </div>
+				</div>
+
+
+				<div id="C8" class="classes">
+					<div style="width: 100%; height: 30px;"><button class="AcaButtons" onclick="displayRight('A8', 8, 'C8')">&#10157; Concepts of Programming Languages</button></div>
+					<div class="A8">&#8226; Studied Grammar and Syntax of Programming Languages along with Compiler Optimizations</div>
+					<div class="A8">&#8226; Built, Manipulated, and Evaluated Abstract Syntax Trees in Python and Haskell</div>
+				</div>
+
+
+				<div id="C9" class="classes">
+					<div style="width: 100%; height: 32%;"><button class="AcaButtons" onclick="displayRight('A9', 9, 'C9')">&#10157; Linear Algebra</button></div>
+					<div class="A9">&#8226; Examined matrices, </div>
+					<div class="A9">&#8226; hehasdf</div>
+				</div>
+
+				<div style="width: 100%; height: 1%;">&nbsp</div>
+
+
+			</div>
+
+
+		</div>
+
+	</div>
+
+</div>
+
+
+<div id="ContactPage" class="pages" style="width: 100%; height: 75%; margin: auto;">
+
+	<div id="ContactsContent" class="contents" style="width: 90%; height: 90%; margin: auto;">
+
+		<div id="ContactTop" style="width: 100%; height: 32%; display: inline-block; margin: auto;">
+
+			<div id="ContactCard" class="card" style="width: 370px; height: 205px;; margin: auto; border: black solid 2px;">
+				<button style="width: 100%; height: 100%; border: 0px; background-color: transparent; text-align: Center;" onclick="menuBox('About', 'AboutPage')"></button>
+			</div>
+
+		</div>
+
+		<div id="ContactBottom" style="width: 100%; height: 65%; display: inline-block; margin: auto;">
+
+			<div id="ContactInfo" class="info">
+
+				<div style="width: 100%; height: 20%; margin: auto;">
+				</div>
+
+				<div style="width: 80%; height: 35%; margin: auto; padding-top: 2%; text-align: center; font-size: 150%;">
+					Feel free to contact me through any of the links listed below. It would be a pleasure to hear your input.
+				</div>
+
+				<div style="width: 80%; height: 35%; margin: auto; padding-top: 2%;">
+					<div style="width: 24%; display: inline-block; text-align: center;"> <a href="mailto:jzhou94@bu.edu">Mail</a></div>
+					<div style="width: 24%; display: inline-block; text-align: center;"> <a  href="www.linkedin.com/in/joeyuzhou">LinkedIn</a></div>
+					<div style="width: 24%; display: inline-block; text-align: center;"> <a  href="https://www.facebook.com/joe.zhou.7568">Facebook</a></div>
+					<div style="width: 24%; display: inline-block; text-align: center;"> <a  href="https://github.com/jzhou94">Github</a></div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
