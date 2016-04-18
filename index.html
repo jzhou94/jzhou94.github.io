@@ -28,7 +28,7 @@
 
 	<div class="container">
 
-		<button type="button" class="navbar-brand" id="logo" name="logo" style="position: absolute;" onclick="menuBox('Home', 'HomePage')">Joe's Website</button>
+		<button type="button" class="navbar-brand" id="logo" name="logo" style="position: absolute;" onclick="menuBox('Home', 'HomePage')">Joe Zhou's Website</button>
 
 		<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
 
@@ -37,11 +37,10 @@
 			<ul class="nav navbar-nav navbar-right">
 
 				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-				<li class="moMenu"><a href="#"><button type="button" class="menu" id="Home" name="Home" onclick="menuBox('Home', 'HomePage')">Home</button></a></li>
-				<li class="moMenu"><a href="#"><button type="button" class="menu" id="Projects" name="Projects" onclick="menuBox('Projects', 'ProjectsPage')">Projects</button></a></li>
-				<li class="moMenu"><a href="#"><button type="button" class="menu" id="Academics" name="Academics" onclick="menuBox('Academics', 'AcademicsPage')">Academics</button></a></li>
-				<li class="moMenu"><a href="#"><button type="button" class="menu" id="Contact" name="Contact" onclick="menuBox('Contact', 'ContactPage')">Contact</button></a></li>
+				<li class="moMenu"><a><button type="button" class="menu" id="Home" name="Home" onclick="menuBox('Home', 'HomePage')">Home</button></a></li>
+				<li class="moMenu"><a><button type="button" class="menu" id="Projects" name="Projects" onclick="menuBox('Projects', 'ProjectsPage')">Projects</button></a></li>
+				<li class="moMenu"><a><button type="button" class="menu" id="Academics" name="Academics" onclick="menuBox('Academics', 'AcademicsPage')">Academics</button></a></li>
+				<li class="moMenu"><a><button type="button" class="menu" id="Contact" name="Contact" onclick="menuBox('Contact', 'ContactPage')">Contact</button></a></li>
 
 			</ul>
 
@@ -57,11 +56,11 @@
 
 </div>
 
-<div id="OverallContent" style="width: 70%; height: 70px; margin: auto; position: relative; z-index: 10;">
+<div id="OverallContent" style="width: 70%; height: 20%; max-height: 200px; margin: auto; position: relative; z-index: 10;">
 
 </div>
 
-<div id="OverallContent" style="width: 70%; min-height: 87%; margin: auto; position: relative; z-index: 10; padding-top: 6%; padding-bottom: 50px;">
+<div id="OverallContent" style="width: 70%; min-height: 80%; margin: auto; position: relative; z-index: 10; padding-bottom: 50px;">
 
 
 <div style="width: 100%; height: 15%; margin: auto;">
@@ -73,31 +72,33 @@
 
 	<div id="AboutContent" class="contents">
 
-		<div id="AboutTop" style="width: 100%; height: 32%; display: inline-block; margin: auto;">
 
-			<img class="img-responsive" src="https://scontent.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/13010882_1078592215545257_4929598882845609277_n.jpg?oh=cfc3ea821cc23ce3b5b5871d0aea18a0&oe=57BF941C" style="margin: auto;">
+		<div class="row">
 
-		</div>
+			<div class="col-lg-6">
+				<img class="img-responsive homeinfo" src="https://scontent.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/13010882_1078592215545257_4929598882845609277_n.jpg?oh=cfc3ea821cc23ce3b5b5871d0aea18a0&oe=57BF941C" style="margin: auto;">
 
-		<div id="AboutBottom" style="width: 100%; height: 65%; display: inline-block; margin: auto;">
+			</div>
 
-			<div id="AboutInfo" class="info">
+			<div class="col-lg-6">
+				<div id="AboutInfo" class="info homeinfo">
 
-				<div style="width: 100%; height: 12%; margin: auto;">
+					<div style="width: 100%; height: 12%; margin: auto;">
+					</div>
+
+					<div style="width: 80%; height: 18%; margin: auto; padding-top: 2%;">
+						I am a Senior undergraduate student at Boston University. Currently, I am pursuing a B.B.A with Finance Concentration in Questrom School of Business, and a Computer Science B.A. in the College of Arts and Sciences.
+					</div>
+
+					<div style="width: 80%; height: 18%; margin: auto; padding-top: 2%;">
+						Currently, I am a lifeguard working at Boston University's Fitness and Recreation Center. In the past I have worked as a web developer for Questrom School of Business' IT office, where I used Wordpress to create websites that were easily modifiable by customers.
+					</div>
+
+					<div style="width: 80%; height: 18%; margin: auto; padding-top: 2%;">
+						Outside of my academic interests, I am a trip leader in the Boston University Outing Club. I often lead day and overnight hiking and camping trips, from eight upwards to fifty people. On these trips, I am solely responsible for organizing the event, budgetting the trip, and communicating with others involved. With the help of co-leaders, we ensure that the trips are safe and enjoyable.
+					</div>
+
 				</div>
-
-				<div style="width: 80%; height: 18%; margin: auto; padding-top: 2%;">
-					I am a Senior undergraduate student at Boston University. Currently, I am pursuing a B.B.A with Finance Concentration in Questrom School of Business, and a Computer Science B.A. in the College of Arts and Sciences.
-				</div>
-
-				<div style="width: 80%; height: 18%; margin: auto; padding-top: 2%;">
-					Currently, I am a lifeguard working at Boston University's Fitness and Recreation Center. In the past I have worked as a web developer for Questrom School of Business' IT office, where I used Wordpress to create websites that were easily modifiable by customers.
-				</div>
-
-				<div style="width: 80%; height: 18%; margin: auto; padding-top: 2%;">
-					Outside of my academic interests, I am a trip leader in the Boston University Outing Club. I often lead day and overnight hiking and camping trips, from eight upwards to fifty people. On these trips, I am solely responsible for organizing the event, budgetting the trip, and communicating with others involved. With the help of co-leaders, we ensure that the trips are safe and enjoyable.
-				</div>
-
 			</div>
 
 		</div>
@@ -111,7 +112,7 @@
 
 <div id="ProjectsPage" class="pages">
 
-	<div id="ProjectsContent" class="contents" style="border: black solid 3px;">
+	<div id="ProjectsContent" class="contents">
 
 		<div id="Project1" class="projects" style="margin-top: 50px;">
 			<div style="width:100%; height: 32%; font-weight: bold;">Current Project: Traffic Density Based Light Timer (Python)</div>
@@ -147,7 +148,7 @@
 
 <div id="AcademicsPage" class="pages">
 
-	<div id="AcademicsContent" class="contents" style="border: black solid 3px;">
+	<div id="AcademicsContent" class="contents">
 
 
 		<div class="row">
@@ -164,36 +165,29 @@
 
 					<div id="C0" class="classes">
 						<div style="width: 100%; height: 30px;"><button class="AcaButtons" onclick="displayLeft('A0', 0, 'C0')">&#10157; Corporate Finance</button></div>
-						<div class="A0">&#8226; Addressed</div>
-						<div class="A0">&#8226; Using various models for Real Option Pricing</div>
+						<div class="A0" style="margin-top: 25px;">&#8226; Addressed Valuation of Financial Options, Real Options, Tax Shields, and Companies</div>
+						<div class="A0">&#8226; Constructed Valuations through Binomial, Black-Scholes, Capital Budgeting and Other Models</div>
 					</div>
 
 
 					<div id="C1" class="classes">
 						<div style="width: 100%; height: 30px;"><button class="AcaButtons" onclick="displayLeft('A1', 1, 'C1')">&#10157; Investment Analysis</button></div>
-						<div class="A1">&#8226; Discussed Diversification, </div>
-						<div class="A1">&#8226; hehasdf</div>
+						<div class="A1" style="margin-top: 25px;">&#8226; Discussed Diversification, Immunization of Risk, Investment Strategies and Portfolio Theories</div>
+						<div class="A1">&#8226; Tested Various Portfolios' Ability to Hedge Against Interest Rates using Microsoft Excel </div>
 					</div>
 
 
 					<div id="C2" class="classes">
 						<div style="width: 100%; height: 30px;"><button class="AcaButtons" onclick="displayLeft('A2', 2, 'C2')">&#10157; Money and Financial Markets</button></div>
-						<div class="A2">&#8226; Investigated Effects of Business Practices, Federal Policies, and Economic Trends on Corporations</div>
-						<div class="A2">&#8226; hehasdf</div>
+						<div class="A2" style="margin-top: 25px;">&#8226; Reviewed Effects of Business Practices, Federal Policies, and Economic Trends on Corporations</div>
+						<div class="A2">&#8226; Investigated Events Leading to the Lehman Brothers' Bankruptcy and its Aftermath</div>
 					</div>
 
 
 					<div id="C3" class="classes">
 						<div style="width: 100%; height: 30px;"><button class="AcaButtons" onclick="displayLeft('A3', 3, 'C3')">&#10157; Cross-Functional Management</button></div>
-						<div class="A3">&#8226; Applied</div>
+						<div class="A3" style="margin-top: 25px;">&#8226; Applied Finance, Marketing, Operations, and Info-System Concepts to Business Projects</div>
 						<div class="A3">&#8226; Devised a Team Business Plan for a Theoretical New Product “The Sustain-A-Bowl”</div>
-					</div>
-
-
-					<div id="C4" class="classes">
-						<div style="width: 100%; height: 30px;"><button class="AcaButtons" onclick="displayLeft('A4', 4, 'C4')">&#10157; Probability and Statistics</button></div>
-						<div class="A4">&#8226; Reviewed </div>
-						<div class="A4">&#8226; hehasdf</div>
 					</div>
 
 					<div style="width: 100%; height: 1%;">&nbsp;</div>
@@ -208,41 +202,34 @@
 
 				<div class="AcaContents">
 
+					<div id="C4" class="classes">
+						<div style="width: 100%; height: 30px;"><button class="AcaButtons" onclick="displayRight('A4', 4, 'C4')">&#10157; Operating Systems</button></div>
+						<div class="A4" style="margin-top: 25px;">&#8226; Examined the Operating System's Role in Security and Resource Delegation</div>
+						<div class="A4">&#8226; Programed Drivers, Memory Detectors, Schedulers and Filesystems in C/Assembly</div>
+					</div>
+
+
 					<div id="C5" class="classes">
-						<div style="width: 100%; height: 30px;"><button class="AcaButtons" onclick="displayRight('A5', 5, 'C5')">&#10157; Operating Systems</button></div>
-						<div class="A5">&#8226; asdf</div>
-						<div class="A5">&#8226; Programed Keyboard Drivers, Memory Detection Printers, and Schedulers in C and Assembly</div>
+						<div style="width: 100%; height: 30px;"><button class="AcaButtons" onclick="displayRight('A5', 5, 'C5')">&#10157; Computer Networks</button></div>
+						<div class="A5" style="margin-top: 25px;">&#8226; Explored Layers of the OSI Model and Each's relation to the Internet</div>
+						<div class="A5">&#8226; Emulated the application, transport and network layers using Python and C</div>
 					</div>
 
 
 					<div id="C6" class="classes">
-						<div style="width: 100%; height: 30px;"><button class="AcaButtons" onclick="displayRight('A6', 6, 'C6')">&#10157; Computer Networks</button></div>
-						<div class="A6">&#8226; Explored Layers of the OSI Model and Each's relation to the Internet</div>
-						<div class="A6">&#8226; Emulated the application, transport and network layers using Python and C</div>
+						<div style="width: 100%; height: 30px;"><button class="AcaButtons" onclick="displayRight('A6', 6, 'C6')">&#10157; Intro to Algorithms</button></div>
+						<div class="A6" style="margin-top: 25px;">&#8226; Analyzed Mathematic Algorithms Related to Scheduling, Perfect Matching, and Hashing</div>
+						<div class="A6">&#8226; Implemented Python Algorithms such as Sequence Alignment and Max-Flow Min-Cut </div>
 					</div>
 
 
 					<div id="C7" class="classes">
-						<div style="width: 100%; height: 30px;"><button class="AcaButtons" onclick="displayRight('A7', 7, 'C7')">&#10157; Intro to Algorithms</button></div>
-						<div class="A7">&#8226; Analyzed Mathematic Algorithms Related to Scheduling, Perfect Matching, and Hashing</div>
-						<div class="A7">&#8226; Implemented Python Algorithms such as Sequence Alignment and Max-Flow Min-Cut </div>
+						<div style="width: 100%; height: 30px;"><button class="AcaButtons" onclick="displayRight('A7', 7, 'C7')">&#10157; Concepts of Programming Languages</button></div>
+						<div class="A7" style="margin-top: 25px;">&#8226; Studied Grammar and Syntax of Programming Languages along with Compiler Optimizations</div>
+						<div class="A7">&#8226; Built, Manipulated, and Evaluated Abstract Syntax Trees in Python and Haskell</div>
 					</div>
 
-
-					<div id="C8" class="classes">
-						<div style="width: 100%; height: 30px;"><button class="AcaButtons" onclick="displayRight('A8', 8, 'C8')">&#10157; Concepts of Programming Languages</button></div>
-						<div class="A8">&#8226; Studied Grammar and Syntax of Programming Languages along with Compiler Optimizations</div>
-						<div class="A8">&#8226; Built, Manipulated, and Evaluated Abstract Syntax Trees in Python and Haskell</div>
-					</div>
-
-
-					<div id="C9" class="classes">
-						<div style="width: 100%; height: 32%;"><button class="AcaButtons" onclick="displayRight('A9', 9, 'C9')">&#10157; Linear Algebra</button></div>
-						<div class="A9">&#8226; Examined matrices, </div>
-						<div class="A9">&#8226; hehasdf</div>
-					</div>
-
-					<div style="width: 100%; height: 1%;">&nbsp</div>
+					<div style="width: 100%; height: 1%;">&nbsp;</div>
 
 
 				</div>
@@ -268,7 +255,7 @@
 
 	<div id="ContactsContent" class="contents">
 
-		<div id="ContactTop" style="width: 100%; height: 32%; display: inline-block; margin: auto;">
+		<div id="ContactTop" style="width: 100%; height: 32%; display: inline-block; margin: auto; padding: 9%;">
 
 			<img class="img-responsive" src="https://scontent.xx.fbcdn.net/hphotos-xtp1/v/l/t1.0-9/12494905_1048988535172292_6964509463001107290_n.jpg?oh=5d48a1aace6d1ff9c39a18738f5de8f3&oe=575226A8" style="margin: auto;">
 
@@ -278,18 +265,9 @@
 
 			<div id="ContactInfo" class="info">
 
-				<div style="width: 100%; height: 20%; margin: auto;">
-				</div>
 
-				<div style="width: 80%; height: 35%; margin: auto; padding-top: 2%; text-align: center; font-size: 150%;">
+				<div style="width: 80%; height: 35%; margin: auto; padding-top: 2%; text-align: center; font-size: 150%; padding-bottom: 10%;">
 					Feel free to contact me through any of the links listed below. It would be a pleasure to hear your input.
-				</div>
-
-				<div style="width: 80%; height: 35%; margin: auto; padding-top: 2%;">
-					<div style="width: 24%; display: inline-block; text-align: center;"> <a href="mailto:jzhou94@bu.edu">Mail</a></div>
-					<div style="width: 24%; display: inline-block; text-align: center;"> <a  href="www.linkedin.com/in/joeyuzhou">LinkedIn</a></div>
-					<div style="width: 24%; display: inline-block; text-align: center;"> <a  href="https://www.facebook.com/joe.zhou.7568">Facebook</a></div>
-					<div style="width: 24%; display: inline-block; text-align: center;"> <a  href="https://github.com/jzhou94">Github</a></div>
 				</div>
 
 			</div>
@@ -305,6 +283,22 @@
 <div class="navbar navbar-default navbar-fixed-bottom">
 
 	<div class="container">
+
+		<div class="linkButtons">
+		<button style="display: block; margin: auto; width: 90px;" type="button" class="btn btn-danger"><a href="mailto:jzhou94@bu.edu" style="display: block; text-align: center; color: white;">Mail</a></button>
+		</div>
+
+		<div class="linkButtons">
+		<button style="display: block; margin: auto; width: 90px;" type="button" class="btn btn-primary"><a href="www.linkedin.com/in/joeyuzhou" style="display: block; text-align: center; color: white;">LinkedIn</a></button>
+		</div>
+
+		<div class="linkButtons">
+		<button style="display: block; margin: auto; width: 90px;" type="button" class="btn btn-info"><a href="https://www.facebook.com/joe.zhou.7568" style="display: block; text-align: center; color: white;">Facebook</a></button>
+		</div>
+
+		<div class="linkButtons">
+		<button style="display: block; margin: auto; width: 90px;" type="button" class="btn btn-success"><a href="https://github.com/jzhou94" style="display: block; text-align: center; color: white;">Github</a></button>
+		</div>
 
 	</div>
 
