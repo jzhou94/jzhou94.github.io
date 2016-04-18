@@ -112,7 +112,6 @@ body {
 
 .AcaContents {
 	width: 80%;
-	height: 380px;
 	margin: auto;
 }
 
@@ -124,10 +123,13 @@ body {
 
 @media only screen and (min-device-width: 480px){
 .AcaTitles {
-	margin-bottom: 50px;
+	margin-bottom: 70px;
 }
 .AcaButtons {
 	padding-top: 20px;
+}
+.AcaContents {
+	height: 380px;
 }
 }
 
