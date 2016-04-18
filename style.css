@@ -165,13 +165,13 @@ hr#style1:after {
 		z-index: 10;
 	}
 	.AcaTitles {
-		margin-bottom: 70px;
+		margin-bottom: 50px;
 	}
 	.AcaButtons {
 		padding-top: 20px;
 	}
 	.AcaContents {
-		height: 380px;
+		height: 400px;
 	}
 	#contactText{
 		font-size: 150%;
