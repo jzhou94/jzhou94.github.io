@@ -133,6 +133,12 @@ hr#style1:after {
     background: white;
 }
 
+@media only screen and (max-device-width: 330px){
+	#extendContent {
+		margin-top: 100px;
+	}
+}
+
 @media only screen and (max-device-width: 480px){
 	#fakeTop{
 		width: 70%;
@@ -140,9 +146,6 @@ hr#style1:after {
 		margin: auto;
 		position: relative;
 		z-index: 10;
-	}
-	#extendContent {
-		margin-top: 100px;
 	}
 	#contactText{
 		font-size: 120%;
