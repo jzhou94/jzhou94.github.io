@@ -144,6 +144,9 @@ hr#style1:after {
 	#extendContent {
 		margin-top: 100px;
 	}
+	#contactText{
+		font-size: 90%;
+	}
 	#isMobile {
 		display: block;
 	}
@@ -169,6 +172,9 @@ hr#style1:after {
 	}
 	.AcaContents {
 		height: 380px;
+	}
+	#contactText{
+		font-size: 150%;
 	}
 	#isMobile {
 		display: none;
