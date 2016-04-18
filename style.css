@@ -140,6 +140,9 @@ hr#style1:after {
 #style1 {
 	display: inline-block;
 }
+#notMobile {
+	display: none;
+}
 }
 
 @media only screen and (min-device-width: 480px){
@@ -154,6 +157,9 @@ hr#style1:after {
 }
 .AcaContents {
 	height: 380px;
+}
+#notMobile {
+	display: inline-block;
 }
 }
 
