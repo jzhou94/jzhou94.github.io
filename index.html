@@ -21,90 +21,61 @@
 
 <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script type="text/javascript"> $(document).ready(function () { $('.dropdown-toggle').dropdown(); }); </script>
 <script src="script.js"></script>
 
-<div class="navbar navbar-default navbar-fixed-top" style="margin-bottom: 0px;">
+<div id="header" style="width: 100%; height: 15%; margin: auto; position: fixed; z-index: 15; background-color: white;">
 
-	<div class="container">
+	<div style="height: 20%; display: inline-block;"> </div>
 
-		<button type="button" class="navbar-brand" id="logo" name="logo" style="position: absolute;" onclick="menuBox('Home', 'HomePage')">Joe Zhou's Website</button>
+	<div id="mainBackground" style="display: block; margin: auto;">
 
-		<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+		<div id="headerContent" style="display: block; margin: auto;">
 
-		<div class="collapse navbar-collapse navHeaderCollapse">
+			<div id="menu" style="height: 80%; display: block; position: static; margin: auto;">
 
-			<ul class="nav navbar-nav navbar-right">
+			    <button type="button" id="Projects" class="menu" name="Projects" onclick="menuBox('Projects', 'ProjectsPage', 0)">
+			    	<div class="normal projectsC">Works</div>
+			    	<div class="clicked projectsC">{ Works }</div>
+			    </button> 
 
-				<li><a href="#"></a></li>
-				<li class="moMenu"><a href="#fakeTop"><button type="button" class="menu" id="Home" name="Home" onclick="menuBox('Home', 'HomePage')">Home</button></a></li>
-				<li class="moMenu"><a href="#fakeTop"><button type="button" class="menu" id="Projects" name="Projects" onclick="menuBox('Projects', 'ProjectsPage')">Projects</button></a></li>
-				<li class="moMenu"><a href="#fakeTop"><button type="button" class="menu" id="Academics" name="Academics" onclick="menuBox('Academics', 'AcademicsPage')">Academics</button></a></li>
-				<li class="moMenu"><a href="#fakeTop"><button type="button" class="menu" id="Contact" name="Contact" onclick="menuBox('Contact', 'ContactPage')">Contact</button></a></li>
+			    <button type="button" id="Home" class="menu" name="Home" onclick="menuBox('Home', 'HomePage', 1)">
+			    	<div class="normal homeC">Home</div>
+			    	<div class="clicked homeC">{ Home }</div>
+			    </button> 
 
-			</ul>
+			    <button type="button" id="Contact" class="menu" name="Contact" onclick="menuBox('Contact', 'ContactPage', 2)">
+			    	<div class="normal contactC">Contact</div>
+			    	<div class="clicked contactC">{ Contact }</div>
+			    </button> 
+
+			</div>
 
 		</div>
 
 	</div>
 
-
 </div>
 
 
-<div id="fakeBody" style="width: 100%; height: 100%; margin: auto; position: fixed; z-index: 5;">
+<div id="fakeBody">
 
 </div>
 
-<div id="fakeTop" class="OverallContent">
+<div id="fakeTop">
 
 </div>
 
-<div class="OverallContent" style="width: 70%; min-height: 80%; margin: auto; position: relative; z-index: 10; padding-bottom: 50px;">
-
-
-<div style="width: 100%; height: 15%; margin: auto;">
-
-</div>
+<div id="OverallContent">
 
 <div id="HomePage" class="pages">
 
-
-	<div id="AboutContent" class="contents">
-
-
-		<div class="row">
-
-			<div class="col-lg-6">
-				<img class="img-responsive homeinfo" src="https://googledrive.com/host/0B0cK_0NtvRjjdkpvaTRyeDUySms/resized.jpg" style="margin: auto;">
-
-			</div>
-
-			<div class="col-lg-6">
-				<div id="AboutInfo" class="info homeinfo">
-
-					<div style="width: 100%; height: 12%; margin: auto;">
-					</div>
-
-					<div style="width: 80%; height: 18%; margin: auto; padding-top: 2%;">
-						I am a Senior undergraduate student at Boston University. Currently, I am pursuing a B.B.A with Finance Concentration in Questrom School of Business, and a Computer Science B.A. in the College of Arts and Sciences.
-					</div>
-
-					<div style="width: 80%; height: 18%; margin: auto; padding-top: 2%;">
-						Currently, I am a lifeguard working at Boston University's Fitness and Recreation Center. In the past I have worked as a web developer for Questrom School of Business' IT office, where I used Wordpress to create websites that were easily modifiable by customers.
-					</div>
-
-					<div style="width: 80%; height: 18%; margin: auto; padding-top: 2%;">
-						Outside of my academic interests, I am a trip leader in the Boston University Outing Club. I often lead day and overnight hiking and camping trips, from eight upwards to fifty people. On these trips, I am solely responsible for organizing the event, budgetting the trip, and communicating with others involved. With the help of co-leaders, we ensure that the trips are safe and enjoyable.
-					</div>
-
-				</div>
-			</div>
-
-		</div>
-
+	<div id="homeFill">
 	</div>
 
+<<<<<<< HEAD
+	<div id="homeContent">
+		/ * Joe Zhou * /
+=======
 </div>
 
 
@@ -138,173 +109,114 @@
 			<div style="width:100%; min-height: 23%; margin-top: 15px; margin-bottom: 15px;">&nbsp; &nbsp; &#8226; For the assembly code, click <a href="https://github.com/jzhou94/MemoryDetection/blob/master/memos-1.s">here</a>. For the linkerscript, click <a href="https://github.com/jzhou94/MemoryDetection/blob/master/memos-1.ld">here</a>. For the readme file, click <a href="https://github.com/jzhou94/MemoryDetection/blob/master/README-1">here</a>.</div>
 		</div>
 
+>>>>>>> origin/master
 	</div>
 
-</div>
+	<div id="aboutTag">
+		<button id="aboutButton" onclick="aboutMe(1)">˅ About Me ˅</button>
+	</div>
 
+ 	<div class="row" id="aboutContent">
 
+		<div class="col-lg-6">
+			<img class="img-responsive homeinfo" src="resized.jpg" style="margin: auto;">
 
+		</div>
 
+		<div class="col-lg-6">
+			<div id="AboutInfo" class="info homeinfo">
 
-<div id="AcademicsPage" class="pages">
-
-	<div id="AcademicsContent" class="contents">
-
-
-		<div class="row">
-
-			<div class="col-md-1">
-			</div>
-
-			<div class="col-md-5">
-
-				<div id="TItleLeft" class="AcaTitles">Bachelor of Science in Business Administration, Finance Concentration
+				<div style="width: 100%; height: 12%; margin: auto;">
 				</div>
 
-				<div id="extendContent" class="AcaContents">
-
-					<div id="C0" class="classes">
-						<div style="width: 100%; height: 75px;"><button class="AcaButtons" onclick="displayLeft('A0', 0, 'C0')">&#10157; Corporate Finance</button></div>
-						<div class="A0">&#8226; Addressed Valuation of Financial Options, Real Options, Tax Shields, and Companies</div>
-						<div class="A0">&#8226; Constructed Valuations through Binomial, Black-Scholes, Capital Budgeting and Other Models</div>
-					</div>
-
-
-					<div id="C1" class="classes">
-						<div style="width: 100%; height: 75px;"><button class="AcaButtons" onclick="displayLeft('A1', 1, 'C1')">&#10157; Investment Analysis</button></div>
-						<div class="A1">&#8226; Discussed Diversification, Immunization of Risk, Investment Strategies and Portfolio Theories</div>
-						<div class="A1">&#8226; Tested Various Portfolios' Ability to Hedge Against Interest Rates using Microsoft Excel </div>
-					</div>
-
-
-					<div id="C2" class="classes">
-						<div style="width: 100%; height: 75px;"><button class="AcaButtons" onclick="displayLeft('A2', 2, 'C2')">&#10157; Money and Financial Markets</button></div>
-						<div class="A2">&#8226; Reviewed Effects of Business Practices, Federal Policies, and Economic Trends on Corporations</div>
-						<div class="A2">&#8226; Investigated Events Leading to the Lehman Brothers' Bankruptcy and its Aftermath</div>
-					</div>
-
-
-					<div id="C3" class="classes">
-						<div style="width: 100%; height: 75px;"><button class="AcaButtons" onclick="displayLeft('A3', 3, 'C3')">&#10157; Cross-Functional Management</button></div>
-						<div class="A3">&#8226; Applied Finance, Marketing, Operations, and Info-System Concepts to Business Projects</div>
-						<div class="A3">&#8226; Devised a Team Business Plan for a Theoretical New Product “The Sustain-A-Bowl”</div>
-					</div>
-
-					<div style="width: 100%; height: 1%;">&nbsp;</div>
-
-				</div>
-			</div>
-
-			<div id="isMobile" class="col-md-1" style="width: 70%; margin: auto;">
-			<hr id="style1"></hr>
-			</div>
-
-			<div class="col-md-5">
-
-				<div id="TitleRight" class="AcaTitles">Bachelor of Arts in Computer Science
+				<div style="width: 80%; height: 18%; margin: auto; padding-top: 2%;">
+					I am a Senior undergraduate student at Boston University. Currently, I am pursuing a B.B.A with Finance Concentration in Questrom School of Business, and a Computer Science B.A. in the College of Arts and Sciences.
 				</div>
 
-				<div class="AcaContents">
-
-					<div id="C4" class="classes">
-						<div style="width: 100%; height: 75px;"><button class="AcaButtons" onclick="displayRight('A4', 4, 'C4')">&#10157; Operating Systems</button></div>
-						<div class="A4">&#8226; Examined the Operating System's Role in Security and Resource Delegation</div>
-						<div class="A4">&#8226; Programed Drivers, Memory Detectors, Schedulers and Filesystems in C/Assembly</div>
-					</div>
-
-
-					<div id="C5" class="classes">
-						<div style="width: 100%; height: 75px;"><button class="AcaButtons" onclick="displayRight('A5', 5, 'C5')">&#10157; Computer Networks</button></div>
-						<div class="A5">&#8226; Explored Layers of the OSI Model and Each's relation to the Internet</div>
-						<div class="A5">&#8226; Emulated the application, transport and network layers using Python and C</div>
-					</div>
-
-
-					<div id="C6" class="classes">
-						<div style="width: 100%; height: 75px;"><button class="AcaButtons" onclick="displayRight('A6', 6, 'C6')">&#10157; Intro to Algorithms</button></div>
-						<div class="A6">&#8226; Analyzed Mathematic Algorithms Related to Scheduling, Perfect Matching, and Hashing</div>
-						<div class="A6">&#8226; Implemented Python Algorithms such as Sequence Alignment and Max-Flow Min-Cut </div>
-					</div>
-
-
-					<div id="C7" class="classes">
-						<div style="width: 100%; height: 75px;"><button class="AcaButtons" onclick="displayRight('A7', 7, 'C7')">&#10157; Concepts of Programming Languages</button></div>
-						<div class="A7">&#8226; Studied Grammar and Syntax of Programming Languages along with Compiler Optimizations</div>
-						<div class="A7">&#8226; Built, Manipulated, and Evaluated Abstract Syntax Trees in Python and Haskell</div>
-					</div>
-
-					<div style="width: 100%; height: 1%;">&nbsp;</div>
-
-
+				<div style="width: 80%; height: 18%; margin: auto; padding-top: 2%;">
+					Currently, I am a lifeguard working at Boston University's Fitness and Recreation Center. In the past I have worked as a web developer for Questrom School of Business' IT office, where I used Wordpress to create websites that were easily modifiable by customers.
 				</div>
 
+				<div style="width: 80%; height: 18%; margin: auto; padding-top: 2%;">
+					Outside of my academic interests, I am a trip leader in the Boston University Outing Club. I often lead day and overnight hiking and camping trips, from eight upwards to fifty people. On these trips, I am solely responsible for organizing the event, budgetting the trip, and communicating with others involved. With the help of co-leaders, we ensure that the trips are safe and enjoyable.
+				</div>
 
 			</div>
-
-			<div id="notMobile" class="col-md-1">
-			</div>
-
 		</div>
 
 	</div>
 
+	<div id="downloadTag">
+		<a id="resume" href="resume.pdf" download="Joe Zhou's Resume">˅ Download Resume ˅</a>
+	</div>
+
+
 </div>
 
 
 
 
+<div id="ProjectsPage" class="pages">
+
+	<div id="C0" class="classes">
+		<div class="B0"><button class="AcaButtons" onclick="displayLeft('A0', 0, 'C0')">// Current Project: Traffic Density Based Light Timer (Java)</button></div>
+		<div class="A0">/* Java application that uses density measurements with priority queues, multi-threading, and semaphores to reduce traffic wait times across cities in India */</div>
+		<div class="A0">/* Code Not Available to Public */</div>
+	</div>
+
+
+	<div id="C1" class="classes">
+		<div class="B1"><button class="AcaButtons" onclick="displayLeft('A1', 1, 'C1')">// Dynamic Programming Word Converter (Python)</button></div>
+		<div class="A1">/* Python project that uses sequence alignment through dynamic programming to determine the fastest method of changing one word to another */</div>
+		<div class="A1">/* For the python code, click <a href="https://github.com/jzhou94/SimpleDifferenceDynamicProg/tree/master/MainProgram">here</a>. For the readme file, click <a href="https://github.com/jzhou94/SimpleDifferenceDynamicProg/blob/master/MainProgram/ReadMe">here</a> */</div>
+	</div>
+
+
+	<div id="C2" class="classes">
+		<div class="B2"><button class="AcaButtons" onclick="displayLeft('A2', 2, 'C2')">// Networks Reliable Routing Protocol (C)</button></div>
+		<div class="A2">/* C transport protocol that reliably communicates messages between Application and Network Layers using timeouts, checksums, and ACKs */</div>
+		<div class="A2">/* For the C code, click <a href="https://github.com/jzhou94/ReliableRouting/blob/master/pa2.c">here</a>. For the readme file, click <a href="https://github.com/jzhou94/ReliableRouting/blob/master/ReadMe">here</a> */</div>
+	</div>
+
+
+	<div id="C3" class="classes">
+		<div class="B3"><button class="AcaButtons" onclick="displayLeft('A3', 3, 'C3')">// Available Memory Detection (Assembly, Linkerscript)</button></div>
+		<div class="A3">/* Uses BIOS interrupts to detect and print amount of available memory allocated through QEMU on virtual machine */</div>
+		<div class="A3">/* For the assembly code, click <a href="https://github.com/jzhou94/MemoryDetection/blob/master/memos-1.s">here</a>. For the linkerscript, click <a href="https://github.com/jzhou94/MemoryDetection/blob/master/memos-1.ld">here</a>. For the readme file, click <a href="https://github.com/jzhou94/MemoryDetection/blob/master/README-1">here</a> */</div>
+	</div>
+
+</div>
 
 
 <div id="ContactPage" class="pages">
 
-	<div id="ContactsContent" class="contents">
-
-		<div id="ContactTop" style="width: 100%; height: 32%; display: inline-block; margin: auto; padding: 9%;">
-
-			<img class="img-responsive" src="https://googledrive.com/host/0B0cK_0NtvRjjdkpvaTRyeDUySms/businesscard.png" style="margin: auto;">
-
-		</div>
-
-		<div id="ContactBottom" style="width: 100%; height: 65%; display: inline-block; margin: auto;">
-
-			<div id="ContactInfo" class="info">
-
-
-				<div id="contactText" style="width: 80%; height: 35%; margin: auto; padding-top: 2%; text-align: center; padding-bottom: 10%;">
-					Feel free to contact me through any of the links listed below. It would be a pleasure to hear your input.
-				</div>
-
-			</div>
-
-		</div>
-
+<<<<<<< HEAD
+	<div class="linkButtons">
+	<a class="links" href="https://www.facebook.com/joe.zhou.7568">\ * Facebook * /</a>
 	</div>
-
-</div>
-
-</div>
-
-<div class="navbar navbar-default navbar-fixed-bottom">
-
-	<div class="container">
-
+=======
 		<div class="linkButtons">
 		<a href="mailto:jzhou94@bu.edu" style="display: block; margin: auto; width: 75px; text-align: center; color: white; padding-left: 0px; padding-right: 0px;" type="button" class="btn btn-danger">Mail</a>
 		</div>
+>>>>>>> origin/master
 
-		<div class="linkButtons">
-		<a href="https://www.linkedin.com/in/joeyuzhou" style="display: block; margin: auto; width: 75px; text-align: center; color: white; padding-left: 0px; padding-right: 0px;" type="button" class="btn btn-primary">LinkedIn</a>
-		</div>
-
-		<div class="linkButtons">
-		<a href="https://www.facebook.com/joe.zhou.7568" style="display: block; margin: auto; width: 75px; text-align: center; color: white; padding-left: 0px; padding-right: 0px;" type="button" class="btn btn-info">Facebook</a>
-		</div>
-
-		<div class="linkButtons">
-		<a href="https://github.com/jzhou94" style="display: block; margin: auto; width: 75px; text-align: center; color: white; padding-left: 0px; padding-right: 0px;" type="button" class="btn btn-success">Github</a>
-		</div>
-
+	<div class="linkButtons">
+	<a class="links" href="https://www.linkedin.com/in/joeyuzhou">\ * LinkedIn * /</a>
 	</div>
+
+	<div class="linkButtons">
+	<a class="links" href="https://github.com/jzhou94">\ * Github * /</a>
+	</div>
+
+	<div class="linkButtons">
+	<a class="links" href="mailto:jzhou94@bu.edu">\ * Email * /</a>
+	</div>
+
+	<div class="linkButtons">
+	<a style="color: #ec008c;">\*Designed By Derek Lin*/</a>
+	</div>
+
+</div>
 
 </div>
 
