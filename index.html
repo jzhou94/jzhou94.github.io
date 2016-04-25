@@ -23,29 +23,29 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="script.js"></script>
 
-<div id="header" style="width: 100%; height: 15%; margin: auto; position: fixed; z-index: 15; background-color: white;">
+<div id="header" style="width: 100%; height: 15%; margin: auto; position: fixed; z-index: 15; background-color: white; min-height: 70px;">
 
 	<div style="height: 20%; display: inline-block;"> </div>
 
 	<div id="mainBackground" style="display: block; margin: auto;">
 
-		<div id="headerContent" style="display: block; margin: auto;">
+		<div id="headerContent" style="display: block; margin: auto; border-bottom: 1px solid #000">
 
 			<div id="menu" style="height: 80%; display: block; position: static; margin: auto;">
 
 			    <button type="button" id="Projects" class="menu" name="Projects" onclick="menuBox('Projects', 'ProjectsPage', 0)">
-			    	<div class="normal projectsC">Works</div>
-			    	<div class="clicked projectsC">{ Works }</div>
+			    	<div class="normal projectsC"  style="color: #000;">WORKS</div>
+			    	<div class="clicked projectsC">{ WORKS }</div>
 			    </button> 
 
 			    <button type="button" id="Home" class="menu" name="Home" onclick="menuBox('Home', 'HomePage', 1)">
-			    	<div class="normal homeC">Joe</div>
-			    	<div class="clicked homeC">{ Joe }</div>
+			    	<div class="normal homeC"  style="color: #000;">JOE</div>
+			    	<div class="clicked homeC">{ JOE }</div>
 			    </button> 
 
 			    <button type="button" id="Contact" class="menu" name="Contact" onclick="menuBox('Contact', 'ContactPage', 2)">
-			    	<div class="normal contactC">Contact</div>
-			    	<div class="clicked contactC">{ Contact }</div>
+			    	<div class="normal contactC"  style="color: #000;">CONTACT</div>
+			    	<div class="clicked contactC">{ CONTACT }</div>
 			    </button> 
 
 			</div>
@@ -72,8 +72,8 @@
 	<div id="homeFill">
 	</div>
 
-	<div id="homeContent">
-		/ * Joe Zhou * /
+	<div id="homeContent" style="color: #000;">
+		/ * JOE ZHOU * /
 	</div>
 
 	<div id="aboutTag">
@@ -123,28 +123,28 @@
 <div id="ProjectsPage" class="pages">
 
 	<div id="C0" class="classes">
-		<div class="B0"><button class="AcaButtons" onclick="displayLeft('A0', 0, 'C0')">// Current Project: Traffic Density Based Light Timer (Java)</button></div>
+		<div class="B0"><button class="AcaButtons" style="color: #000;" onclick="displayLeft('A0', 0, 'C0')">// Current Project: Traffic Density Based Light Timer (Java)</button></div>
 		<div class="A0">/* Java application that uses density measurements with priority queues, multi-threading, and semaphores to reduce traffic wait times across cities in India */</div>
 		<div class="A0">/* Code Not Available to Public */</div>
 	</div>
 
 
 	<div id="C1" class="classes">
-		<div class="B1"><button class="AcaButtons" onclick="displayLeft('A1', 1, 'C1')">// Dynamic Programming Word Converter (Python)</button></div>
+		<div class="B1"><button class="AcaButtons" style="color: #000;" onclick="displayLeft('A1', 1, 'C1')">// Dynamic Programming Word Converter (Python)</button></div>
 		<div class="A1">/* Python project that uses sequence alignment through dynamic programming to determine the fastest method of changing one word to another */</div>
 		<div class="A1">/* For the python code, click <a href="https://github.com/jzhou94/SimpleDifferenceDynamicProg/tree/master/MainProgram">here</a>. For the readme file, click <a href="https://github.com/jzhou94/SimpleDifferenceDynamicProg/blob/master/MainProgram/ReadMe">here</a> */</div>
 	</div>
 
 
 	<div id="C2" class="classes">
-		<div class="B2"><button class="AcaButtons" onclick="displayLeft('A2', 2, 'C2')">// Networks Reliable Routing Protocol (C)</button></div>
+		<div class="B2"><button class="AcaButtons" style="color: #000;" onclick="displayLeft('A2', 2, 'C2')">// Networks Reliable Routing Protocol (C)</button></div>
 		<div class="A2">/* C transport protocol that reliably communicates messages between Application and Network Layers using timeouts, checksums, and ACKs */</div>
 		<div class="A2">/* For the C code, click <a href="https://github.com/jzhou94/ReliableRouting/blob/master/pa2.c">here</a>. For the readme file, click <a href="https://github.com/jzhou94/ReliableRouting/blob/master/ReadMe">here</a> */</div>
 	</div>
 
 
 	<div id="C3" class="classes">
-		<div class="B3"><button class="AcaButtons" onclick="displayLeft('A3', 3, 'C3')">// Available Memory Detection (Assembly, Linkerscript)</button></div>
+		<div class="B3"><button class="AcaButtons" style="color: #000;" onclick="displayLeft('A3', 3, 'C3')">// Available Memory Detection (Assembly, Linkerscript)</button></div>
 		<div class="A3">/* Uses BIOS interrupts to detect and print amount of available memory allocated through QEMU on virtual machine */</div>
 		<div class="A3">/* For the assembly code, click <a href="https://github.com/jzhou94/MemoryDetection/blob/master/memos-1.s">here</a>. For the linkerscript, click <a href="https://github.com/jzhou94/MemoryDetection/blob/master/memos-1.ld">here</a>. For the readme file, click <a href="https://github.com/jzhou94/MemoryDetection/blob/master/README-1">here</a> */</div>
 	</div>
@@ -153,6 +153,10 @@
 
 
 <div id="ContactPage" class="pages">
+
+	<div class="linkButtons">
+	<a class="links" style="color: #000;">\ * 617 . 678 . 8121 * /</a>
+	</div>
 
 	<div class="linkButtons">
 	<a class="links" href="https://www.facebook.com/joe.zhou.7568">\ * Facebook * /</a>

@@ -108,9 +108,9 @@
             c2.style.height = "24%";
             c3.style.height = "24%";
 
-            c0.style.color = "black";
-            c1.style.color = "black";
-            c2.style.color = "black";
-            c3.style.color = "black";
+            c0.style.color = "#000";
+            c1.style.color = "#000";
+            c2.style.color = "#000";
+            c3.style.color = "#000";
         }
     }

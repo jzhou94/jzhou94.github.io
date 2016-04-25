@@ -217,7 +217,7 @@ hr#style1:after {
 }
 
 .linkButtons {
-	height: 20%;
+	height: 16%;
 	display: block;
 	margin: auto;
 	text-align: center;
@@ -479,13 +479,13 @@ hr#style1:after {
 		font-size: 500%;
 	}
 	#aboutButton {
-		color: black;
+		color: #000;
 	}
 	#aboutTag {
 		font-size: 280%;
 	}
 	#resume {
-		color: black;
+		color: #000;
 		font-size: 280%;
 	}
 	.A0, .A1, .A2, .A3 {
@@ -496,7 +496,7 @@ hr#style1:after {
 		margin-left: 10%;
 	}
 	.links {
-		color: black;
+		color: #000;
 		font-size: 190%;
 	}
 	.links:hover {
