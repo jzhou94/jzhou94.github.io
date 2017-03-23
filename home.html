@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+
+ <head>
+ 
+ <title>My Webpage</title>
+
+ <meta name="viewport" content="width=device-width, intial-scale=1.0">
+ <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+ <meta content="utf-8" http-equiv="encoding">
+
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+ <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+ <link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+
+<body>
+
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+
+<div style="width: 100%; height: 30%;">
+
+	<div style="height: 20%; display: inline-block;"> </div>
+
+	<div id="menu" style="height: 80%; display: block; position: static; margin: auto;">
+
+	    <button type="button" id="Projects" class="menu" name="Projects" onclick="location.href='projects';">
+	    	<div style="color: #000;">WORKS</div>
+	    </button> 
+
+	    <button type="button" id="Home" class="col-lg-4 menu" name="Home" onclick="location.href='home';">
+	    	<div style="color: #27aae1;">{ JOE }</div>
+	    </button> 
+
+	    <button type="button" id="Contact" class="col-lg-4 menu" name="Contact" onclick="location.href='contact';">
+	    	<div style="color: #000;">CONTACT</div>
+	    </button> 
+
+	</div>
+
+</div>
+
+<div style="width: 100%; height: 70%;">
+
+<div id="HomePage" style="display: block;">
+
+	<div id="homeFill">
+	</div>
+
+	<div id="homeContent" style="color: #000;">
+		/ * JOE ZHOU * /
+	</div>
+
+	<div id="aboutTag">
+		<button id="aboutButton" onclick="aboutMe(1)">˅ About Me ˅</button>
+	</div>
+
+ 	<div class="row" id="aboutContent">
+
+		<div class="col-lg-6">
+			<img class="img-responsive homeinfo" src="resized.jpg" style="margin: auto;">
+
+		</div>
+
+		<div class="col-lg-6">
+			<div id="AboutInfo" class="info homeinfo">
+
+				<div style="width: 100%; height: 12%; margin: auto;">
+				</div>
+
+				<div style="width: 80%; height: 18%; margin: auto; padding-top: 2%;">
+					I am a Senior undergraduate student at Boston University. Currently, I am pursuing a B.B.A with Finance Concentration in Questrom School of Business, and a Computer Science B.A. in the College of Arts and Sciences.
+				</div>
+
+				<div style="width: 80%; height: 18%; margin: auto; padding-top: 2%;">
+					Currently, I am a lifeguard working at Boston University's Fitness and Recreation Center. In the past I have worked as a web developer for Questrom School of Business' IT office, where I used Wordpress to create websites that were easily modifiable by customers.
+				</div>
+
+				<div style="width: 80%; height: 18%; margin: auto; padding-top: 2%;">
+					Outside of my academic interests, I am a trip leader in the Boston University Outing Club. I often lead day and overnight hiking and camping trips, from eight upwards to fifty people. On these trips, I am solely responsible for organizing the event, budgetting the trip, and communicating with others involved. With the help of co-leaders, we ensure that the trips are safe and enjoyable.
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+	<div id="downloadTag">
+		<a id="resume" href="Resume.pdf" download="Joe Zhou's Resume">˅ Download Resume ˅</a>
+	</div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
